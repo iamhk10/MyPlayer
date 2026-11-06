@@ -1,13 +1,13 @@
-package dev.anilbeesetti.nextplayer.feature.more.screens.history
+package dev.himanshu.myplayer.feature.more.screens.history
 
 import androidx.lifecycle.viewModelScope
-import dev.anilbeesetti.nextplayer.core.data.repository.MediaRepository
-import dev.anilbeesetti.nextplayer.core.data.repository.fake.FakeMediaRepository
-import dev.anilbeesetti.nextplayer.core.data.repository.fake.FakePreferencesRepository
-import dev.anilbeesetti.nextplayer.core.model.Video
-import dev.anilbeesetti.nextplayer.core.ui.base.DataState
-import dev.anilbeesetti.nextplayer.settings.screens.medialibrary.MediaLibraryPreferencesUiEvent
-import dev.anilbeesetti.nextplayer.settings.screens.medialibrary.MediaLibraryPreferencesViewModel
+import dev.himanshu.myplayer.core.data.repository.MediaRepository
+import dev.himanshu.myplayer.core.data.repository.fake.FakeMediaRepository
+import dev.himanshu.myplayer.core.data.repository.fake.FakePreferencesRepository
+import dev.himanshu.myplayer.core.model.Video
+import dev.himanshu.myplayer.core.ui.base.DataState
+import dev.himanshu.myplayer.settings.screens.medialibrary.MediaLibraryPreferencesUiEvent
+import dev.himanshu.myplayer.settings.screens.medialibrary.MediaLibraryPreferencesViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.cancel
