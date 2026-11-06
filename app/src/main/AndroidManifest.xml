@@ -24,7 +24,7 @@
         tools:ignore="ScopedStorage" />
 
     <application
-        android:name=".NextPlayerApplication"
+        android:name=".MyPlayerApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -33,7 +33,7 @@
         android:label="@string/app_name"
         android:banner="@drawable/tv_banner"
         android:supportsRtl="true"
-        android:theme="@style/Theme.NextPlayer.Splash"
+        android:theme="@style/Theme.MyPlayer.Splash"
         tools:targetApi="s">
         <activity
             android:name=".MainActivity"
