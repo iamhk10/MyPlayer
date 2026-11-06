@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer.feature.more.components
+package dev.himanshu.myplayer.feature.more.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -18,8 +18,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import dev.anilbeesetti.nextplayer.core.ui.R
-import dev.anilbeesetti.nextplayer.core.ui.designsystem.NextIcons
+import dev.himanshu.myplayer.core.ui.R
+import dev.himanshu.myplayer.core.ui.designsystem.NextIcons
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
