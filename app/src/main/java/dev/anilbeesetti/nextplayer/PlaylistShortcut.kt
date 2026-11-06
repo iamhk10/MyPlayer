@@ -1,14 +1,14 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import android.content.Context
 import android.content.Intent
 import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.graphics.drawable.IconCompat
-import dev.anilbeesetti.nextplayer.core.model.PlaylistSummary
+import dev.himanshu.myplayer.core.model.PlaylistSummary
 
 internal object PlaylistShortcut {
-    private const val ACTION_OPEN_PLAYLIST = "dev.anilbeesetti.nextplayer.action.OPEN_PLAYLIST"
+    private const val ACTION_OPEN_PLAYLIST = "dev.himanshu.myplayer.action.OPEN_PLAYLIST"
     private const val EXTRA_PLAYLIST_ID = "playlist_id"
 
     fun isSupported(context: Context): Boolean =

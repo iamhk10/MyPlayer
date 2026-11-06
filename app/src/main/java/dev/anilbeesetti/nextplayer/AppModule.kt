@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import android.content.Context
 import coil3.ImageLoader
@@ -6,15 +6,15 @@ import coil3.disk.DiskCache
 import coil3.disk.directory
 import coil3.request.CachePolicy
 import coil3.request.crossfade
-import dev.anilbeesetti.nextplayer.core.common.di.DispatchersModule
-import dev.anilbeesetti.nextplayer.core.data.DataModule
-import dev.anilbeesetti.nextplayer.core.data.repository.PreferencesRepository
-import dev.anilbeesetti.nextplayer.core.model.ThumbnailGenerationStrategy
-import dev.anilbeesetti.nextplayer.feature.network.NetworkModule
-import dev.anilbeesetti.nextplayer.feature.player.PlayerModule
-import dev.anilbeesetti.nextplayer.feature.playlist.PlaylistModule
-import dev.anilbeesetti.nextplayer.feature.videopicker.VideoPickerModule
-import dev.anilbeesetti.nextplayer.settings.SettingsModule
+import dev.himanshu.myplayer.core.common.di.DispatchersModule
+import dev.himanshu.myplayer.core.data.DataModule
+import dev.himanshu.myplayer.core.data.repository.PreferencesRepository
+import dev.himanshu.myplayer.core.model.ThumbnailGenerationStrategy
+import dev.himanshu.myplayer.feature.network.NetworkModule
+import dev.himanshu.myplayer.feature.player.PlayerModule
+import dev.himanshu.myplayer.feature.playlist.PlaylistModule
+import dev.himanshu.myplayer.feature.videopicker.VideoPickerModule
+import dev.himanshu.myplayer.settings.SettingsModule
 import okio.FileSystem
 import org.koin.core.annotation.ComponentScan
 import org.koin.core.annotation.KoinViewModel
@@ -32,7 +32,7 @@ import org.koin.core.annotation.Single
         VideoPickerModule::class,
     ],
 )
-@ComponentScan("dev.anilbeesetti.nextplayer.feature.more")
+@ComponentScan("dev.himanshu.myplayer.feature.more")
 class AppModule {
 
     @KoinViewModel

@@ -1,9 +1,9 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
-import dev.anilbeesetti.nextplayer.core.data.repository.NetworkConnectionRepository
-import dev.anilbeesetti.nextplayer.core.media.network.keys.SshKeyStore
-import dev.anilbeesetti.nextplayer.core.model.NetworkAuthentication
-import dev.anilbeesetti.nextplayer.core.model.NetworkProtocol
+import dev.himanshu.myplayer.core.data.repository.NetworkConnectionRepository
+import dev.himanshu.myplayer.core.media.network.keys.SshKeyStore
+import dev.himanshu.myplayer.core.model.NetworkAuthentication
+import dev.himanshu.myplayer.core.model.NetworkProtocol
 import kotlinx.coroutines.flow.first
 
 internal suspend fun initializeSshKeyStore(

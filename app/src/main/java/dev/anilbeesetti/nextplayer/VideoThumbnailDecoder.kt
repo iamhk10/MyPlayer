@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory

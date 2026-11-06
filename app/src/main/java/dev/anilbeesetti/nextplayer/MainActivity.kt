@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import android.content.Intent
 import android.content.res.Configuration
@@ -61,28 +61,28 @@ import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.ui.NavDisplay
 import androidx.window.core.layout.WindowSizeClass
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
-import dev.anilbeesetti.nextplayer.core.common.extensions.isTelevision
-import dev.anilbeesetti.nextplayer.core.common.service.system.SystemService
-import dev.anilbeesetti.nextplayer.core.media.services.MediaOperationsService
-import dev.anilbeesetti.nextplayer.core.model.ThemeConfig
-import dev.anilbeesetti.nextplayer.core.ui.components.LocalNavigationBottomPadding
-import dev.anilbeesetti.nextplayer.core.ui.components.LocalTopLevelBottomBarVisibleSetter
-import dev.anilbeesetti.nextplayer.core.ui.components.LocalTopLevelFabSetter
-import dev.anilbeesetti.nextplayer.core.ui.components.TopLevelFabState
-import dev.anilbeesetti.nextplayer.core.ui.components.thenIf
-import dev.anilbeesetti.nextplayer.core.ui.theme.NextPlayerTheme
-import dev.anilbeesetti.nextplayer.navigation.NextNavigationBar
-import dev.anilbeesetti.nextplayer.navigation.NextNavigationRail
-import dev.anilbeesetti.nextplayer.navigation.TopLevelDestination
-import dev.anilbeesetti.nextplayer.navigation.TopLevelNavState
-import dev.anilbeesetti.nextplayer.navigation.mediaNavGraph
-import dev.anilbeesetti.nextplayer.navigation.moreNavGraph
-import dev.anilbeesetti.nextplayer.navigation.navigationTransition
-import dev.anilbeesetti.nextplayer.navigation.networkNavGraph
-import dev.anilbeesetti.nextplayer.navigation.openPlaylist
-import dev.anilbeesetti.nextplayer.navigation.playlistNavGraph
-import dev.anilbeesetti.nextplayer.navigation.rememberTopLevelNavState
-import dev.anilbeesetti.nextplayer.navigation.settingsNavGraph
+import dev.himanshu.myplayer.core.common.extensions.isTelevision
+import dev.himanshu.myplayer.core.common.service.system.SystemService
+import dev.himanshu.myplayer.core.media.services.MediaOperationsService
+import dev.himanshu.myplayer.core.model.ThemeConfig
+import dev.himanshu.myplayer.core.ui.components.LocalNavigationBottomPadding
+import dev.himanshu.myplayer.core.ui.components.LocalTopLevelBottomBarVisibleSetter
+import dev.himanshu.myplayer.core.ui.components.LocalTopLevelFabSetter
+import dev.himanshu.myplayer.core.ui.components.TopLevelFabState
+import dev.himanshu.myplayer.core.ui.components.thenIf
+import dev.himanshu.myplayer.core.ui.theme.MyPlayerTheme
+import dev.himanshu.myplayer.navigation.NextNavigationBar
+import dev.himanshu.myplayer.navigation.NextNavigationRail
+import dev.himanshu.myplayer.navigation.TopLevelDestination
+import dev.himanshu.myplayer.navigation.TopLevelNavState
+import dev.himanshu.myplayer.navigation.mediaNavGraph
+import dev.himanshu.myplayer.navigation.moreNavGraph
+import dev.himanshu.myplayer.navigation.navigationTransition
+import dev.himanshu.myplayer.navigation.networkNavGraph
+import dev.himanshu.myplayer.navigation.openPlaylist
+import dev.himanshu.myplayer.navigation.playlistNavGraph
+import dev.himanshu.myplayer.navigation.rememberTopLevelNavState
+import dev.himanshu.myplayer.navigation.settingsNavGraph
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -146,7 +146,7 @@ class MainActivity : FragmentActivity() {
                 }
             }
 
-            NextPlayerTheme(
+            MyPlayerTheme(
                 darkTheme = shouldUseDarkTheme,
                 highContrastDarkTheme = shouldUseHighContrastDarkTheme(state = state),
                 dynamicColor = shouldUseDynamicTheming(state = state),
