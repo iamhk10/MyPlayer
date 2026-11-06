@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer.crash
+package dev.himanshu.myplayer.crash
 
 import android.content.ClipData
 import android.content.Intent
@@ -51,16 +51,16 @@ import androidx.core.content.FileProvider
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.lifecycleScope
-import dev.anilbeesetti.nextplayer.BuildConfig
-import dev.anilbeesetti.nextplayer.MainActivity
-import dev.anilbeesetti.nextplayer.MainActivityUiState
-import dev.anilbeesetti.nextplayer.MainViewModel
-import dev.anilbeesetti.nextplayer.core.ui.R
-import dev.anilbeesetti.nextplayer.core.ui.designsystem.NextIcons
-import dev.anilbeesetti.nextplayer.core.ui.theme.NextPlayerTheme
-import dev.anilbeesetti.nextplayer.shouldUseDarkTheme
-import dev.anilbeesetti.nextplayer.shouldUseDynamicTheming
-import dev.anilbeesetti.nextplayer.shouldUseHighContrastDarkTheme
+import dev.himanshu.myplayer.BuildConfig
+import dev.himanshu.myplayer.MainActivity
+import dev.himanshu.myplayer.MainActivityUiState
+import dev.himanshu.myplayer.MainViewModel
+import dev.himanshu.myplayer.core.ui.R
+import dev.himanshu.myplayer.core.ui.designsystem.NextIcons
+import dev.himanshu.myplayer.core.ui.theme.MyPlayerTheme
+import dev.himanshu.myplayer.shouldUseDarkTheme
+import dev.himanshu.myplayer.shouldUseDynamicTheming
+import dev.himanshu.myplayer.shouldUseHighContrastDarkTheme
 import java.io.BufferedReader
 import java.io.File
 import java.io.InputStreamReader
@@ -105,7 +105,7 @@ class CrashActivity : ComponentActivity() {
                 )
             }
 
-            NextPlayerTheme(
+            MyPlayerTheme(
                 darkTheme = shouldUseDarkTheme,
                 highContrastDarkTheme = shouldUseHighContrastDarkTheme(state = state),
                 dynamicColor = shouldUseDynamicTheming(state = state),
@@ -155,7 +155,7 @@ class CrashActivity : ComponentActivity() {
         withContext(Dispatchers.IO) {
             val file = File(
                 cacheDir,
-                "next_player_logs.txt",
+                "my_player_logs.txt",
             ).also {
                 if (it.exists()) it.delete()
                 it.createNewFile()
@@ -354,7 +354,7 @@ private fun LogsSelectionContainer(logs: String, modifier: Modifier = Modifier) 
 @PreviewLightDark
 @Composable
 private fun CrashLogsScreenPreview() {
-    NextPlayerTheme {
+    MyPlayerTheme {
         CrashScreenContent(
             state = CrashState(
                 exceptionString = "Exception message",
