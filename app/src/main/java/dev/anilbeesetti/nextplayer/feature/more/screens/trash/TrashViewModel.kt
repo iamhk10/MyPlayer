@@ -1,16 +1,16 @@
-package dev.anilbeesetti.nextplayer.feature.more.screens.trash
+package dev.himanshu.myplayer.feature.more.screens.trash
 
 import android.net.Uri
 import androidx.core.net.toUri
 import androidx.lifecycle.viewModelScope
-import dev.anilbeesetti.nextplayer.core.data.repository.MediaRepository
-import dev.anilbeesetti.nextplayer.core.data.repository.PreferencesRepository
-import dev.anilbeesetti.nextplayer.core.media.services.MediaOperationsService
-import dev.anilbeesetti.nextplayer.core.model.ApplicationPreferences
-import dev.anilbeesetti.nextplayer.core.model.Video
-import dev.anilbeesetti.nextplayer.core.ui.base.DataState
-import dev.anilbeesetti.nextplayer.core.ui.base.MviViewModel
-import dev.anilbeesetti.nextplayer.feature.videopicker.state.SelectionItem
+import dev.himanshu.myplayer.core.data.repository.MediaRepository
+import dev.himanshu.myplayer.core.data.repository.PreferencesRepository
+import dev.himanshu.myplayer.core.media.services.MediaOperationsService
+import dev.himanshu.myplayer.core.model.ApplicationPreferences
+import dev.himanshu.myplayer.core.model.Video
+import dev.himanshu.myplayer.core.ui.base.DataState
+import dev.himanshu.myplayer.core.ui.base.MviViewModel
+import dev.himanshu.myplayer.feature.videopicker.state.SelectionItem
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

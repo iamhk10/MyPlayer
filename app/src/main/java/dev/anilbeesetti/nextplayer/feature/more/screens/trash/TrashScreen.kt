@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer.feature.more.screens.trash
+package dev.himanshu.myplayer.feature.more.screens.trash
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -33,16 +33,16 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import dev.anilbeesetti.nextplayer.core.ui.R
-import dev.anilbeesetti.nextplayer.core.ui.base.DataState
-import dev.anilbeesetti.nextplayer.core.ui.components.NextDialog
-import dev.anilbeesetti.nextplayer.core.ui.components.NextTopAppBar
-import dev.anilbeesetti.nextplayer.core.ui.components.tvFocusRing
-import dev.anilbeesetti.nextplayer.core.ui.designsystem.NextIcons
-import dev.anilbeesetti.nextplayer.core.ui.extensions.copy
-import dev.anilbeesetti.nextplayer.feature.videopicker.composables.CenterCircularProgressBar
-import dev.anilbeesetti.nextplayer.feature.videopicker.composables.VideoListItem
-import dev.anilbeesetti.nextplayer.feature.videopicker.state.rememberSelectionManager
+import dev.himanshu.myplayer.core.ui.R
+import dev.himanshu.myplayer.core.ui.base.DataState
+import dev.himanshu.myplayer.core.ui.components.NextDialog
+import dev.himanshu.myplayer.core.ui.components.NextTopAppBar
+import dev.himanshu.myplayer.core.ui.components.tvFocusRing
+import dev.himanshu.myplayer.core.ui.designsystem.NextIcons
+import dev.himanshu.myplayer.core.ui.extensions.copy
+import dev.himanshu.myplayer.feature.videopicker.composables.CenterCircularProgressBar
+import dev.himanshu.myplayer.feature.videopicker.composables.VideoListItem
+import dev.himanshu.myplayer.feature.videopicker.state.rememberSelectionManager
 
 @Composable
 fun TrashScreen(viewModel: TrashViewModel) {
