@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer.crash
+package dev.himanshu.myplayer.crash
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
