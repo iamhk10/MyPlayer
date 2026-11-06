@@ -1,10 +1,10 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.ShortcutManager
-import dev.anilbeesetti.nextplayer.core.model.PlaylistSummary
-import dev.anilbeesetti.nextplayer.core.model.PlaylistType
+import dev.himanshu.myplayer.core.model.PlaylistSummary
+import dev.himanshu.myplayer.core.model.PlaylistType
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull

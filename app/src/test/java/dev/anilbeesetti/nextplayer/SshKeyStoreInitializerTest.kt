@@ -1,12 +1,12 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import android.net.Uri
-import dev.anilbeesetti.nextplayer.core.data.repository.NetworkConnectionRepository
-import dev.anilbeesetti.nextplayer.core.media.network.keys.SshKeyStore
-import dev.anilbeesetti.nextplayer.core.media.network.keys.StagedSshKey
-import dev.anilbeesetti.nextplayer.core.model.NetworkAuthentication
-import dev.anilbeesetti.nextplayer.core.model.NetworkConnection
-import dev.anilbeesetti.nextplayer.core.model.NetworkProtocol
+import dev.himanshu.myplayer.core.data.repository.NetworkConnectionRepository
+import dev.himanshu.myplayer.core.media.network.keys.SshKeyStore
+import dev.himanshu.myplayer.core.media.network.keys.StagedSshKey
+import dev.himanshu.myplayer.core.model.NetworkAuthentication
+import dev.himanshu.myplayer.core.model.NetworkConnection
+import dev.himanshu.myplayer.core.model.NetworkProtocol
 import java.io.File
 import java.io.IOException
 import kotlinx.coroutines.flow.Flow
