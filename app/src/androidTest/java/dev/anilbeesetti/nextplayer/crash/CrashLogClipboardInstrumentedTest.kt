@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer.crash
+package dev.himanshu.myplayer.crash
 
 import android.content.ClipboardManager
 import android.content.Context
