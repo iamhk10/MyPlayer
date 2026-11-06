@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer.feature.more.screens.more
+package dev.himanshu.myplayer.feature.more.screens.more
 
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -42,26 +42,26 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import dev.anilbeesetti.nextplayer.core.common.extensions.isTelevision
-import dev.anilbeesetti.nextplayer.core.media.services.MediaOperationsService
-import dev.anilbeesetti.nextplayer.core.model.ApplicationPreferences
-import dev.anilbeesetti.nextplayer.core.model.Video
-import dev.anilbeesetti.nextplayer.core.ui.R
-import dev.anilbeesetti.nextplayer.core.ui.base.DataState
-import dev.anilbeesetti.nextplayer.core.ui.components.BindTopLevelFab
-import dev.anilbeesetti.nextplayer.core.ui.components.LocalNavigationBottomPadding
-import dev.anilbeesetti.nextplayer.core.ui.components.NextTopAppBar
-import dev.anilbeesetti.nextplayer.core.ui.components.TopLevelFabKey
-import dev.anilbeesetti.nextplayer.core.ui.components.rememberRestorableFocusState
-import dev.anilbeesetti.nextplayer.core.ui.components.restorableFocusGroup
-import dev.anilbeesetti.nextplayer.core.ui.components.restorableFocusItem
-import dev.anilbeesetti.nextplayer.core.ui.components.thenIf
-import dev.anilbeesetti.nextplayer.core.ui.components.tvFocusRing
-import dev.anilbeesetti.nextplayer.core.ui.components.tvListFocus
-import dev.anilbeesetti.nextplayer.core.ui.designsystem.NextIcons
-import dev.anilbeesetti.nextplayer.core.ui.extensions.copy
-import dev.anilbeesetti.nextplayer.feature.more.components.HistoryEmptyState
-import dev.anilbeesetti.nextplayer.feature.videopicker.composables.VideoGridItem
+import dev.himanshu.myplayer.core.common.extensions.isTelevision
+import dev.himanshu.myplayer.core.media.services.MediaOperationsService
+import dev.himanshu.myplayer.core.model.ApplicationPreferences
+import dev.himanshu.myplayer.core.model.Video
+import dev.himanshu.myplayer.core.ui.R
+import dev.himanshu.myplayer.core.ui.base.DataState
+import dev.himanshu.myplayer.core.ui.components.BindTopLevelFab
+import dev.himanshu.myplayer.core.ui.components.LocalNavigationBottomPadding
+import dev.himanshu.myplayer.core.ui.components.NextTopAppBar
+import dev.himanshu.myplayer.core.ui.components.TopLevelFabKey
+import dev.himanshu.myplayer.core.ui.components.rememberRestorableFocusState
+import dev.himanshu.myplayer.core.ui.components.restorableFocusGroup
+import dev.himanshu.myplayer.core.ui.components.restorableFocusItem
+import dev.himanshu.myplayer.core.ui.components.thenIf
+import dev.himanshu.myplayer.core.ui.components.tvFocusRing
+import dev.himanshu.myplayer.core.ui.components.tvListFocus
+import dev.himanshu.myplayer.core.ui.designsystem.NextIcons
+import dev.himanshu.myplayer.core.ui.extensions.copy
+import dev.himanshu.myplayer.feature.more.components.HistoryEmptyState
+import dev.himanshu.myplayer.feature.videopicker.composables.VideoGridItem
 
 @Composable
 fun MoreScreen(viewModel: MoreViewModel) {
