@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer.api;
+package dev.himanshu.myplayer.api;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -68,7 +68,7 @@ public final class ApiTestCallerActivity extends Activity {
         if (item == null) item = "first.wav";
         String gate = options.getStringExtra("gate");
         Intent request = new Intent(Intent.ACTION_VIEW)
-            .setClassName(targetPackage, "dev.anilbeesetti.nextplayer.feature.player.PlayerActivity")
+            .setClassName(targetPackage, "dev.himanshu.myplayer.feature.player.PlayerActivity")
             .setDataAndType(uri(item, gate), "audio/wav")
             .putExtra("return_result", true)
             .putExtra("background", options.getBooleanExtra("background", false))
