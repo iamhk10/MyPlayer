@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer.service
+package dev.himanshu.myplayer.service
 
 import android.app.Activity
 import android.app.Application
@@ -7,8 +7,8 @@ import android.content.Intent
 import androidx.activity.ComponentActivity
 import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
-import dev.anilbeesetti.nextplayer.core.common.service.registerForSuspendActivityResult
-import dev.anilbeesetti.nextplayer.core.common.service.system.LocalSystemService
+import dev.himanshu.myplayer.core.common.service.registerForSuspendActivityResult
+import dev.himanshu.myplayer.core.common.service.system.LocalSystemService
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.async
