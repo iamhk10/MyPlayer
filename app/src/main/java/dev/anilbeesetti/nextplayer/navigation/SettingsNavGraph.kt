@@ -1,32 +1,32 @@
-package dev.anilbeesetti.nextplayer.navigation
+package dev.himanshu.myplayer.navigation
 
 import androidx.navigation3.runtime.EntryProviderScope
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey
-import dev.anilbeesetti.nextplayer.settings.Setting
-import dev.anilbeesetti.nextplayer.settings.navigation.aboutPreferencesEntry
-import dev.anilbeesetti.nextplayer.settings.navigation.appearancePreferencesEntry
-import dev.anilbeesetti.nextplayer.settings.navigation.audioPreferencesEntry
-import dev.anilbeesetti.nextplayer.settings.navigation.folderPreferencesEntry
-import dev.anilbeesetti.nextplayer.settings.navigation.generalPreferencesEntry
-import dev.anilbeesetti.nextplayer.settings.navigation.gesturePreferencesEntry
-import dev.anilbeesetti.nextplayer.settings.navigation.librariesEntry
-import dev.anilbeesetti.nextplayer.settings.navigation.mediaLibraryPreferencesEntry
-import dev.anilbeesetti.nextplayer.settings.navigation.navigateToAboutPreferences
-import dev.anilbeesetti.nextplayer.settings.navigation.navigateToAppearancePreferences
-import dev.anilbeesetti.nextplayer.settings.navigation.navigateToAudioPreferences
-import dev.anilbeesetti.nextplayer.settings.navigation.navigateToFolderPreferencesScreen
-import dev.anilbeesetti.nextplayer.settings.navigation.navigateToGeneralPreferences
-import dev.anilbeesetti.nextplayer.settings.navigation.navigateToGesturePreferences
-import dev.anilbeesetti.nextplayer.settings.navigation.navigateToLibraries
-import dev.anilbeesetti.nextplayer.settings.navigation.navigateToMediaLibraryPreferencesScreen
-import dev.anilbeesetti.nextplayer.settings.navigation.navigateToPlayerPreferences
-import dev.anilbeesetti.nextplayer.settings.navigation.navigateToSubtitlePreferences
-import dev.anilbeesetti.nextplayer.settings.navigation.navigateToThumbnailPreferencesScreen
-import dev.anilbeesetti.nextplayer.settings.navigation.playerPreferencesEntry
-import dev.anilbeesetti.nextplayer.settings.navigation.settingsEntry
-import dev.anilbeesetti.nextplayer.settings.navigation.subtitlePreferencesEntry
-import dev.anilbeesetti.nextplayer.settings.navigation.thumbnailPreferencesEntry
+import dev.himanshu.myplayer.settings.Setting
+import dev.himanshu.myplayer.settings.navigation.aboutPreferencesEntry
+import dev.himanshu.myplayer.settings.navigation.appearancePreferencesEntry
+import dev.himanshu.myplayer.settings.navigation.audioPreferencesEntry
+import dev.himanshu.myplayer.settings.navigation.folderPreferencesEntry
+import dev.himanshu.myplayer.settings.navigation.generalPreferencesEntry
+import dev.himanshu.myplayer.settings.navigation.gesturePreferencesEntry
+import dev.himanshu.myplayer.settings.navigation.librariesEntry
+import dev.himanshu.myplayer.settings.navigation.mediaLibraryPreferencesEntry
+import dev.himanshu.myplayer.settings.navigation.navigateToAboutPreferences
+import dev.himanshu.myplayer.settings.navigation.navigateToAppearancePreferences
+import dev.himanshu.myplayer.settings.navigation.navigateToAudioPreferences
+import dev.himanshu.myplayer.settings.navigation.navigateToFolderPreferencesScreen
+import dev.himanshu.myplayer.settings.navigation.navigateToGeneralPreferences
+import dev.himanshu.myplayer.settings.navigation.navigateToGesturePreferences
+import dev.himanshu.myplayer.settings.navigation.navigateToLibraries
+import dev.himanshu.myplayer.settings.navigation.navigateToMediaLibraryPreferencesScreen
+import dev.himanshu.myplayer.settings.navigation.navigateToPlayerPreferences
+import dev.himanshu.myplayer.settings.navigation.navigateToSubtitlePreferences
+import dev.himanshu.myplayer.settings.navigation.navigateToThumbnailPreferencesScreen
+import dev.himanshu.myplayer.settings.navigation.playerPreferencesEntry
+import dev.himanshu.myplayer.settings.navigation.settingsEntry
+import dev.himanshu.myplayer.settings.navigation.subtitlePreferencesEntry
+import dev.himanshu.myplayer.settings.navigation.thumbnailPreferencesEntry
 
 fun EntryProviderScope<NavKey>.settingsNavGraph(backStack: NavBackStack<NavKey>) {
     settingsEntry(

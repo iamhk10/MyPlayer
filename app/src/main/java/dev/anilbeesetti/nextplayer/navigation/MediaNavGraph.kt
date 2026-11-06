@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer.navigation
+package dev.himanshu.myplayer.navigation
 
 import android.content.Context
 import android.content.Intent
@@ -6,14 +6,14 @@ import android.net.Uri
 import androidx.navigation3.runtime.EntryProviderScope
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey
-import dev.anilbeesetti.nextplayer.feature.player.PlayerActivity
-import dev.anilbeesetti.nextplayer.feature.player.utils.PlayerApi
-import dev.anilbeesetti.nextplayer.feature.videopicker.navigation.mediaPickerEntry
-import dev.anilbeesetti.nextplayer.feature.videopicker.navigation.navigateToMediaPickerScreen
-import dev.anilbeesetti.nextplayer.feature.videopicker.navigation.navigateToSearch
-import dev.anilbeesetti.nextplayer.feature.videopicker.navigation.navigateToVault
-import dev.anilbeesetti.nextplayer.feature.videopicker.navigation.searchEntry
-import dev.anilbeesetti.nextplayer.settings.navigation.navigateToSettings
+import dev.himanshu.myplayer.feature.player.PlayerActivity
+import dev.himanshu.myplayer.feature.player.utils.PlayerApi
+import dev.himanshu.myplayer.feature.videopicker.navigation.mediaPickerEntry
+import dev.himanshu.myplayer.feature.videopicker.navigation.navigateToMediaPickerScreen
+import dev.himanshu.myplayer.feature.videopicker.navigation.navigateToSearch
+import dev.himanshu.myplayer.feature.videopicker.navigation.navigateToVault
+import dev.himanshu.myplayer.feature.videopicker.navigation.searchEntry
+import dev.himanshu.myplayer.settings.navigation.navigateToSettings
 
 fun EntryProviderScope<NavKey>.mediaNavGraph(context: Context, backStack: NavBackStack<NavKey>) {
     mediaPickerEntry(

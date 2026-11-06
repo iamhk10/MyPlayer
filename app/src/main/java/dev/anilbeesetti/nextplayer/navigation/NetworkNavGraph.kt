@@ -1,15 +1,15 @@
-package dev.anilbeesetti.nextplayer.navigation
+package dev.himanshu.myplayer.navigation
 
 import android.content.Context
 import androidx.navigation3.runtime.EntryProviderScope
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey
-import dev.anilbeesetti.nextplayer.feature.network.navigation.addConnectionEntry
-import dev.anilbeesetti.nextplayer.feature.network.navigation.navigateToAddConnection
-import dev.anilbeesetti.nextplayer.feature.network.navigation.navigateToNetworkBrowse
-import dev.anilbeesetti.nextplayer.feature.network.navigation.networkBrowseEntry
-import dev.anilbeesetti.nextplayer.feature.network.navigation.networkEntry
-import dev.anilbeesetti.nextplayer.settings.navigation.navigateToSettings
+import dev.himanshu.myplayer.feature.network.navigation.addConnectionEntry
+import dev.himanshu.myplayer.feature.network.navigation.navigateToAddConnection
+import dev.himanshu.myplayer.feature.network.navigation.navigateToNetworkBrowse
+import dev.himanshu.myplayer.feature.network.navigation.networkBrowseEntry
+import dev.himanshu.myplayer.feature.network.navigation.networkEntry
+import dev.himanshu.myplayer.settings.navigation.navigateToSettings
 
 fun EntryProviderScope<NavKey>.networkNavGraph(context: Context, backStack: NavBackStack<NavKey>) {
     networkEntry(

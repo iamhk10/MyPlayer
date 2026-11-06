@@ -1,18 +1,18 @@
-package dev.anilbeesetti.nextplayer.navigation
+package dev.himanshu.myplayer.navigation
 
 import android.content.Context
 import androidx.core.net.toUri
 import androidx.navigation3.runtime.EntryProviderScope
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey
-import dev.anilbeesetti.nextplayer.feature.more.navigation.historyEntry
-import dev.anilbeesetti.nextplayer.feature.more.navigation.moreEntry
-import dev.anilbeesetti.nextplayer.feature.more.navigation.navigateToHistory
-import dev.anilbeesetti.nextplayer.feature.more.navigation.navigateToTrash
-import dev.anilbeesetti.nextplayer.feature.more.navigation.trashEntry
-import dev.anilbeesetti.nextplayer.feature.videopicker.navigation.navigateToVault
-import dev.anilbeesetti.nextplayer.feature.videopicker.navigation.vaultEntry
-import dev.anilbeesetti.nextplayer.settings.navigation.navigateToSettings
+import dev.himanshu.myplayer.feature.more.navigation.historyEntry
+import dev.himanshu.myplayer.feature.more.navigation.moreEntry
+import dev.himanshu.myplayer.feature.more.navigation.navigateToHistory
+import dev.himanshu.myplayer.feature.more.navigation.navigateToTrash
+import dev.himanshu.myplayer.feature.more.navigation.trashEntry
+import dev.himanshu.myplayer.feature.videopicker.navigation.navigateToVault
+import dev.himanshu.myplayer.feature.videopicker.navigation.vaultEntry
+import dev.himanshu.myplayer.settings.navigation.navigateToSettings
 
 fun EntryProviderScope<NavKey>.moreNavGraph(context: Context, backStack: NavBackStack<NavKey>) {
     moreEntry(

@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer.navigation
+package dev.himanshu.myplayer.navigation
 
 import androidx.annotation.StringRes
 import androidx.compose.animation.AnimatedContent
@@ -81,17 +81,17 @@ import androidx.navigation3.runtime.rememberDecoratedNavEntries
 import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.runtime.rememberSaveableStateHolderNavEntryDecorator
 import androidx.navigation3.scene.Scene
-import dev.anilbeesetti.nextplayer.core.common.extensions.isTelevision
-import dev.anilbeesetti.nextplayer.core.ui.R
-import dev.anilbeesetti.nextplayer.core.ui.components.TopLevelFabKey
-import dev.anilbeesetti.nextplayer.core.ui.components.TopLevelFabState
-import dev.anilbeesetti.nextplayer.core.ui.components.thenIf
-import dev.anilbeesetti.nextplayer.core.ui.components.tvFocusRing
-import dev.anilbeesetti.nextplayer.core.ui.designsystem.NextIcons
-import dev.anilbeesetti.nextplayer.feature.more.navigation.MoreRoute
-import dev.anilbeesetti.nextplayer.feature.network.navigation.NetworkRoute
-import dev.anilbeesetti.nextplayer.feature.playlist.navigation.PlaylistListRoute
-import dev.anilbeesetti.nextplayer.feature.videopicker.navigation.MediaPickerRoute
+import dev.himanshu.myplayer.core.common.extensions.isTelevision
+import dev.himanshu.myplayer.core.ui.R
+import dev.himanshu.myplayer.core.ui.components.TopLevelFabKey
+import dev.himanshu.myplayer.core.ui.components.TopLevelFabState
+import dev.himanshu.myplayer.core.ui.components.thenIf
+import dev.himanshu.myplayer.core.ui.components.tvFocusRing
+import dev.himanshu.myplayer.core.ui.designsystem.NextIcons
+import dev.himanshu.myplayer.feature.more.navigation.MoreRoute
+import dev.himanshu.myplayer.feature.network.navigation.NetworkRoute
+import dev.himanshu.myplayer.feature.playlist.navigation.PlaylistListRoute
+import dev.himanshu.myplayer.feature.videopicker.navigation.MediaPickerRoute
 
 /**
  * Top-level destinations shown in the bottom bar / nav rail. The first entry is the start (exit)
