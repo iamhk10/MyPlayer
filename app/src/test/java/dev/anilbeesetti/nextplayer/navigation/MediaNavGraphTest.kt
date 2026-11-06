@@ -1,12 +1,12 @@
-package dev.anilbeesetti.nextplayer.navigation
+package dev.himanshu.myplayer.navigation
 
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import androidx.core.content.IntentCompat
 import androidx.core.net.toUri
-import dev.anilbeesetti.nextplayer.feature.player.utils.PlayerApi
-import dev.anilbeesetti.nextplayer.feature.player.utils.PlaylistPlaybackContract
+import dev.himanshu.myplayer.feature.player.utils.PlayerApi
+import dev.himanshu.myplayer.feature.player.utils.PlaylistPlaybackContract
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull

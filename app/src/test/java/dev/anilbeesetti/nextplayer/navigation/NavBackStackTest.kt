@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer.navigation
+package dev.himanshu.myplayer.navigation
 
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey

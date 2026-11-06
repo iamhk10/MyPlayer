@@ -1,9 +1,9 @@
-package dev.anilbeesetti.nextplayer.navigation
+package dev.himanshu.myplayer.navigation
 
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey
-import dev.anilbeesetti.nextplayer.feature.playlist.navigation.PlaylistDetailRoute
+import dev.himanshu.myplayer.feature.playlist.navigation.PlaylistDetailRoute
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
