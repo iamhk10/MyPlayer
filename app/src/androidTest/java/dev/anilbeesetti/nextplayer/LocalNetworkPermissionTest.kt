@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -12,8 +12,8 @@ import androidx.core.content.ContextCompat
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.SdkSuppress
 import androidx.test.rule.GrantPermissionRule
-import dev.anilbeesetti.nextplayer.core.common.storagePermission
-import dev.anilbeesetti.nextplayer.core.ui.R
+import dev.himanshu.myplayer.core.common.storagePermission
+import dev.himanshu.myplayer.core.ui.R
 import org.junit.Assert.assertEquals
 import org.junit.Rule
 import org.junit.Test

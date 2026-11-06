@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import androidx.activity.ComponentActivity
 import androidx.compose.runtime.mutableStateOf
@@ -10,13 +10,13 @@ import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import dev.anilbeesetti.nextplayer.core.model.ApplicationPreferences
-import dev.anilbeesetti.nextplayer.core.model.Video
-import dev.anilbeesetti.nextplayer.core.ui.base.DataState
-import dev.anilbeesetti.nextplayer.core.ui.theme.NextPlayerTheme
-import dev.anilbeesetti.nextplayer.feature.more.screens.history.HistoryAction
-import dev.anilbeesetti.nextplayer.feature.more.screens.history.HistoryScreenContent
-import dev.anilbeesetti.nextplayer.feature.more.screens.history.HistoryUiState
+import dev.himanshu.myplayer.core.model.ApplicationPreferences
+import dev.himanshu.myplayer.core.model.Video
+import dev.himanshu.myplayer.core.ui.base.DataState
+import dev.himanshu.myplayer.core.ui.theme.MyPlayerTheme
+import dev.himanshu.myplayer.feature.more.screens.history.HistoryAction
+import dev.himanshu.myplayer.feature.more.screens.history.HistoryScreenContent
+import dev.himanshu.myplayer.feature.more.screens.history.HistoryUiState
 import org.junit.Assert.assertEquals
 import org.junit.Rule
 import org.junit.Test
@@ -34,7 +34,7 @@ class HistoryScreenTest {
         )
         val actions = mutableListOf<HistoryAction>()
         composeRule.setContent {
-            NextPlayerTheme {
+            MyPlayerTheme {
                 HistoryScreenContent(state = state.value) { action ->
                     actions += action
                     if (action is HistoryAction.SetHistoryEnabled) {
@@ -117,7 +117,7 @@ class HistoryScreenTest {
         )
         val actions = mutableListOf<HistoryAction>()
         composeRule.setContent {
-            NextPlayerTheme {
+            MyPlayerTheme {
                 HistoryScreenContent(state = state.value) { action ->
                     actions += action
                     if (action == HistoryAction.ClearHistory) {
@@ -152,7 +152,7 @@ class HistoryScreenTest {
     @Test
     fun disabledHistoryHidesExistingEntries() {
         composeRule.setContent {
-            NextPlayerTheme {
+            MyPlayerTheme {
                 HistoryScreenContent(
                     state = HistoryUiState(
                         history = DataState.Success(value = listOf(Video.sample)),

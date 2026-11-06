@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import androidx.activity.ComponentActivity
 import androidx.compose.foundation.layout.Box
@@ -12,13 +12,13 @@ import androidx.compose.ui.test.junit4.v2.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.unit.dp
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import dev.anilbeesetti.nextplayer.core.domain.MediaHolder
-import dev.anilbeesetti.nextplayer.core.model.ApplicationPreferences
-import dev.anilbeesetti.nextplayer.core.model.Folder
-import dev.anilbeesetti.nextplayer.core.model.MediaLayoutMode
-import dev.anilbeesetti.nextplayer.core.model.Video
-import dev.anilbeesetti.nextplayer.core.ui.theme.NextPlayerTheme
-import dev.anilbeesetti.nextplayer.feature.videopicker.composables.MediaView
+import dev.himanshu.myplayer.core.domain.MediaHolder
+import dev.himanshu.myplayer.core.model.ApplicationPreferences
+import dev.himanshu.myplayer.core.model.Folder
+import dev.himanshu.myplayer.core.model.MediaLayoutMode
+import dev.himanshu.myplayer.core.model.Video
+import dev.himanshu.myplayer.core.ui.theme.MyPlayerTheme
+import dev.himanshu.myplayer.feature.videopicker.composables.MediaView
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -32,7 +32,7 @@ class MediaViewWidthTest {
     fun gridSurvivesNarrowAndZeroWidthThenExpands() {
         var width by mutableStateOf(360.dp)
         composeRule.setContent {
-            NextPlayerTheme {
+            MyPlayerTheme {
                 Box(Modifier.requiredWidth(width = width)) {
                     MediaView(
                         mediaHolder = MediaHolder(

@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import android.content.ComponentName
 import android.content.Intent
@@ -14,13 +14,13 @@ import androidx.media3.session.SessionToken
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import com.google.common.util.concurrent.ListenableFuture
-import dev.anilbeesetti.nextplayer.feature.player.extensions.audioDecoderMode
-import dev.anilbeesetti.nextplayer.feature.player.extensions.externalAudio
-import dev.anilbeesetti.nextplayer.feature.player.extensions.externalAudioIndex
-import dev.anilbeesetti.nextplayer.feature.player.extensions.switchTrack
-import dev.anilbeesetti.nextplayer.feature.player.extensions.videoDecoderMode
-import dev.anilbeesetti.nextplayer.feature.player.service.CustomCommands
-import dev.anilbeesetti.nextplayer.feature.player.service.PlayerService
+import dev.himanshu.myplayer.feature.player.extensions.audioDecoderMode
+import dev.himanshu.myplayer.feature.player.extensions.externalAudio
+import dev.himanshu.myplayer.feature.player.extensions.externalAudioIndex
+import dev.himanshu.myplayer.feature.player.extensions.switchTrack
+import dev.himanshu.myplayer.feature.player.extensions.videoDecoderMode
+import dev.himanshu.myplayer.feature.player.service.CustomCommands
+import dev.himanshu.myplayer.feature.player.service.PlayerService
 import io.github.anilbeesetti.nextlib.media3ext.ffdecoder.DecoderMode
 import java.io.File
 import java.nio.ByteBuffer

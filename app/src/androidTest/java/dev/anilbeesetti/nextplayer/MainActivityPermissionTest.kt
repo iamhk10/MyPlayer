@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import android.Manifest
 import android.app.ActivityManager
@@ -9,7 +9,7 @@ import android.os.SystemClock
 import androidx.core.content.ContextCompat
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import dev.anilbeesetti.nextplayer.core.common.storagePermission
+import dev.himanshu.myplayer.core.common.storagePermission
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith

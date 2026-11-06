@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.v2.createAndroidComposeRule
@@ -11,8 +11,8 @@ import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextReplacement
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.GrantPermissionRule
-import dev.anilbeesetti.nextplayer.core.common.storagePermission
-import dev.anilbeesetti.nextplayer.core.ui.R
+import dev.himanshu.myplayer.core.common.storagePermission
+import dev.himanshu.myplayer.core.ui.R
 import java.util.concurrent.CopyOnWriteArrayList
 import okhttp3.Credentials
 import okhttp3.mockwebserver.Dispatcher

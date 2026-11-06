@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import android.os.ParcelFileDescriptor
 import android.os.SystemClock
@@ -27,10 +27,10 @@ import androidx.compose.ui.test.requestFocus
 import androidx.test.espresso.Espresso.pressBack
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
-import dev.anilbeesetti.nextplayer.core.common.extensions.isTelevision
-import dev.anilbeesetti.nextplayer.core.ui.components.NextOutlinedTextField
-import dev.anilbeesetti.nextplayer.core.ui.theme.NextPlayerTheme
-import dev.anilbeesetti.nextplayer.feature.videopicker.composables.RenameDialog
+import dev.himanshu.myplayer.core.common.extensions.isTelevision
+import dev.himanshu.myplayer.core.ui.components.NextOutlinedTextField
+import dev.himanshu.myplayer.core.ui.theme.MyPlayerTheme
+import dev.himanshu.myplayer.feature.videopicker.composables.RenameDialog
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Assume.assumeFalse
@@ -103,7 +103,7 @@ class NextOutlinedTextFieldTest {
     fun renameDialogAutofocusDoesNotOpenKeyboard() {
         assumeTrue(composeRule.activity.isTelevision)
         composeRule.setContent {
-            NextPlayerTheme {
+            MyPlayerTheme {
                 RenameDialog(
                     name = "Original",
                     onDismiss = {},
@@ -134,7 +134,7 @@ class NextOutlinedTextFieldTest {
         assumeTrue(composeRule.activity.isTelevision)
         var clicked = false
         composeRule.setContent {
-            NextPlayerTheme {
+            MyPlayerTheme {
                 NextOutlinedTextField(
                     value = "Query",
                     onValueChange = {},
@@ -167,7 +167,7 @@ class NextOutlinedTextFieldTest {
 
     private fun showForm() {
         composeRule.setContent {
-            NextPlayerTheme {
+            MyPlayerTheme {
                 var first by remember { mutableStateOf(value = "") }
                 var second by remember { mutableStateOf(value = "") }
                 Column {

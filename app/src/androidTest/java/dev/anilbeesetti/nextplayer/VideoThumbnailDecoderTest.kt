@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import android.Manifest
 import android.content.ContentProvider
@@ -95,7 +95,7 @@ class VideoThumbnailDecoderTest {
     fun trashedMediaStoreVideoDecodesWithoutCachedThumbnail() = runBlocking {
         val instrumentation = InstrumentationRegistry.getInstrumentation()
         val context = ApplicationProvider.getApplicationContext<Context>()
-        val name = "nextplayer-thumbnail-${UUID.randomUUID()}.mp4"
+        val name = "myplayer-thumbnail-${UUID.randomUUID()}.mp4"
         val uri = checkNotNull(
             context.contentResolver.insert(
                 MediaStore.Video.Media.EXTERNAL_CONTENT_URI,

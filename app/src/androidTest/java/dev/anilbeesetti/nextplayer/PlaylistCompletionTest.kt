@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import android.content.ComponentName
 import android.content.Intent
@@ -13,12 +13,12 @@ import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.runner.lifecycle.ActivityLifecycleMonitorRegistry
 import androidx.test.runner.lifecycle.Stage
 import com.google.common.util.concurrent.ListenableFuture
-import dev.anilbeesetti.nextplayer.core.data.repository.PreferencesRepository
-import dev.anilbeesetti.nextplayer.core.model.LoopMode
-import dev.anilbeesetti.nextplayer.core.model.Resume
-import dev.anilbeesetti.nextplayer.feature.player.PlayerActivity
-import dev.anilbeesetti.nextplayer.feature.player.service.PlayerService
-import dev.anilbeesetti.nextplayer.feature.player.utils.PlayerApi
+import dev.himanshu.myplayer.core.data.repository.PreferencesRepository
+import dev.himanshu.myplayer.core.model.LoopMode
+import dev.himanshu.myplayer.core.model.Resume
+import dev.himanshu.myplayer.feature.player.PlayerActivity
+import dev.himanshu.myplayer.feature.player.service.PlayerService
+import dev.himanshu.myplayer.feature.player.utils.PlayerApi
 import java.io.File
 import java.nio.ByteBuffer
 import java.nio.ByteOrder

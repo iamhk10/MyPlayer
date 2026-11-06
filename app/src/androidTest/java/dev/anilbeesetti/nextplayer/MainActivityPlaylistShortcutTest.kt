@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import android.content.Context
 import androidx.compose.ui.test.assertIsDisplayed
@@ -11,10 +11,10 @@ import androidx.test.core.app.ActivityScenario
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.GrantPermissionRule
-import dev.anilbeesetti.nextplayer.core.common.storagePermission
-import dev.anilbeesetti.nextplayer.core.data.repository.PlaylistRepository
-import dev.anilbeesetti.nextplayer.core.model.PlaylistSummary
-import dev.anilbeesetti.nextplayer.core.model.PlaylistType
+import dev.himanshu.myplayer.core.common.storagePermission
+import dev.himanshu.myplayer.core.data.repository.PlaylistRepository
+import dev.himanshu.myplayer.core.model.PlaylistSummary
+import dev.himanshu.myplayer.core.model.PlaylistType
 import kotlinx.coroutines.runBlocking
 import org.junit.Rule
 import org.junit.Test

@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import androidx.compose.ui.input.key.Key
 import androidx.compose.ui.test.assertIsDisplayed
@@ -16,9 +16,9 @@ import androidx.compose.ui.test.printToString
 import androidx.test.espresso.Espresso.pressBack
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.GrantPermissionRule
-import dev.anilbeesetti.nextplayer.core.common.extensions.isTelevision
-import dev.anilbeesetti.nextplayer.core.common.storagePermission
-import dev.anilbeesetti.nextplayer.core.ui.R
+import dev.himanshu.myplayer.core.common.extensions.isTelevision
+import dev.himanshu.myplayer.core.common.storagePermission
+import dev.himanshu.myplayer.core.ui.R
 import org.junit.Assume.assumeTrue
 import org.junit.Before
 import org.junit.Rule

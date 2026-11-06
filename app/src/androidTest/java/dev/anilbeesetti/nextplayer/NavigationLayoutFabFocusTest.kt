@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import androidx.activity.ComponentActivity
 import androidx.compose.foundation.focusGroup
@@ -28,12 +28,12 @@ import androidx.compose.ui.test.performKeyInput
 import androidx.compose.ui.test.pressKey
 import androidx.compose.ui.test.requestFocus
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import dev.anilbeesetti.nextplayer.core.common.extensions.isTelevision
-import dev.anilbeesetti.nextplayer.core.ui.components.TopLevelFabKey
-import dev.anilbeesetti.nextplayer.core.ui.components.TopLevelFabState
-import dev.anilbeesetti.nextplayer.core.ui.designsystem.NextIcons
-import dev.anilbeesetti.nextplayer.core.ui.theme.NextPlayerTheme
-import dev.anilbeesetti.nextplayer.navigation.rememberTopLevelNavState
+import dev.himanshu.myplayer.core.common.extensions.isTelevision
+import dev.himanshu.myplayer.core.ui.components.TopLevelFabKey
+import dev.himanshu.myplayer.core.ui.components.TopLevelFabState
+import dev.himanshu.myplayer.core.ui.designsystem.NextIcons
+import dev.himanshu.myplayer.core.ui.theme.MyPlayerTheme
+import dev.himanshu.myplayer.navigation.rememberTopLevelNavState
 import org.junit.Assume.assumeTrue
 import org.junit.Before
 import org.junit.Rule
@@ -98,7 +98,7 @@ class NavigationLayoutFabFocusTest {
 
     private fun showScreen(empty: Boolean = false) {
         composeRule.setContent {
-            NextPlayerTheme {
+            MyPlayerTheme {
                 val state = rememberTopLevelNavState()
                 val fabs = remember {
                     mutableStateMapOf(

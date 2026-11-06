@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import androidx.activity.ComponentActivity
 import androidx.compose.foundation.focusGroup
@@ -35,14 +35,14 @@ import androidx.compose.ui.test.printToString
 import androidx.compose.ui.test.requestFocus
 import androidx.lifecycle.Lifecycle
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import dev.anilbeesetti.nextplayer.core.common.extensions.isTelevision
-import dev.anilbeesetti.nextplayer.core.domain.MediaHolder
-import dev.anilbeesetti.nextplayer.core.model.ApplicationPreferences
-import dev.anilbeesetti.nextplayer.core.model.MediaLayoutMode
-import dev.anilbeesetti.nextplayer.core.model.Video
-import dev.anilbeesetti.nextplayer.core.ui.components.rememberRestorableFocusState
-import dev.anilbeesetti.nextplayer.core.ui.theme.NextPlayerTheme
-import dev.anilbeesetti.nextplayer.feature.videopicker.composables.MediaView
+import dev.himanshu.myplayer.core.common.extensions.isTelevision
+import dev.himanshu.myplayer.core.domain.MediaHolder
+import dev.himanshu.myplayer.core.model.ApplicationPreferences
+import dev.himanshu.myplayer.core.model.MediaLayoutMode
+import dev.himanshu.myplayer.core.model.Video
+import dev.himanshu.myplayer.core.ui.components.rememberRestorableFocusState
+import dev.himanshu.myplayer.core.ui.theme.MyPlayerTheme
+import dev.himanshu.myplayer.feature.videopicker.composables.MediaView
 import org.junit.Assume.assumeTrue
 import org.junit.Before
 import org.junit.Rule
@@ -162,7 +162,7 @@ class TvMediaFocusTest {
     @Composable
     private fun Content(layout: MediaLayoutMode = MediaLayoutMode.LIST, autoFocus: Boolean = true) {
         val holder = rememberSaveableStateHolder()
-        NextPlayerTheme {
+        MyPlayerTheme {
             if (showContent) {
                 holder.SaveableStateProvider(key = "media") {
                     val focus = rememberRestorableFocusState()

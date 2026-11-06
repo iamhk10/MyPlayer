@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import androidx.activity.ComponentActivity
 import androidx.compose.runtime.mutableStateOf
@@ -7,12 +7,12 @@ import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import dev.anilbeesetti.nextplayer.core.model.Video
-import dev.anilbeesetti.nextplayer.core.ui.base.DataState
-import dev.anilbeesetti.nextplayer.core.ui.theme.NextPlayerTheme
-import dev.anilbeesetti.nextplayer.feature.more.screens.more.MoreAction
-import dev.anilbeesetti.nextplayer.feature.more.screens.more.MoreScreenContent
-import dev.anilbeesetti.nextplayer.feature.more.screens.more.MoreUiState
+import dev.himanshu.myplayer.core.model.Video
+import dev.himanshu.myplayer.core.ui.base.DataState
+import dev.himanshu.myplayer.core.ui.theme.MyPlayerTheme
+import dev.himanshu.myplayer.feature.more.screens.more.MoreAction
+import dev.himanshu.myplayer.feature.more.screens.more.MoreScreenContent
+import dev.himanshu.myplayer.feature.more.screens.more.MoreUiState
 import org.junit.Assert.assertEquals
 import org.junit.Rule
 import org.junit.Test
@@ -29,7 +29,7 @@ class MoreScreenHistoryTest {
             mutableStateOf(value = MoreUiState(history = DataState.Success(value = emptyList())))
         val actions = mutableListOf<MoreAction>()
         composeRule.setContent {
-            NextPlayerTheme {
+            MyPlayerTheme {
                 MoreScreenContent(
                     state = state.value,
                     onAction = actions::add,

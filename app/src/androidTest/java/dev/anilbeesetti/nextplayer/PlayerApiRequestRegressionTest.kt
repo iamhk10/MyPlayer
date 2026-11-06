@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import android.app.Activity
 import android.content.ComponentName
@@ -13,12 +13,12 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.runner.lifecycle.ActivityLifecycleMonitorRegistry
 import androidx.test.runner.lifecycle.Stage
-import dev.anilbeesetti.nextplayer.core.data.repository.PreferencesRepository
-import dev.anilbeesetti.nextplayer.core.model.LoopMode
-import dev.anilbeesetti.nextplayer.core.model.PlayerPreferences
-import dev.anilbeesetti.nextplayer.feature.player.PlayerActivity
-import dev.anilbeesetti.nextplayer.feature.player.service.PlayerService
-import dev.anilbeesetti.nextplayer.feature.player.service.stopPlayerSession
+import dev.himanshu.myplayer.core.data.repository.PreferencesRepository
+import dev.himanshu.myplayer.core.model.LoopMode
+import dev.himanshu.myplayer.core.model.PlayerPreferences
+import dev.himanshu.myplayer.feature.player.PlayerActivity
+import dev.himanshu.myplayer.feature.player.service.PlayerService
+import dev.himanshu.myplayer.feature.player.service.stopPlayerSession
 import java.util.UUID
 import java.util.concurrent.FutureTask
 import java.util.concurrent.TimeUnit
@@ -41,7 +41,7 @@ class PlayerApiRequestRegressionTest {
     private val instrumentation = InstrumentationRegistry.getInstrumentation()
     private val context = instrumentation.targetContext
     private val testPackage = instrumentation.context.packageName
-    private val caller = "$testPackage/dev.anilbeesetti.nextplayer.api.ApiTestCallerActivity"
+    private val caller = "$testPackage/dev.himanshu.myplayer.api.ApiTestCallerActivity"
     private val token = UUID.randomUUID().toString()
     private val preferences get() = GlobalContext.get().get<PreferencesRepository>()
     private lateinit var original: PlayerPreferences

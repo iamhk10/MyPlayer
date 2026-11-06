@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import androidx.activity.ComponentActivity
 import androidx.compose.foundation.layout.requiredWidth
@@ -11,12 +11,12 @@ import androidx.compose.ui.test.performSemanticsAction
 import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.unit.dp
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import dev.anilbeesetti.nextplayer.core.model.ApplicationPreferences
-import dev.anilbeesetti.nextplayer.core.model.Video
-import dev.anilbeesetti.nextplayer.core.ui.theme.NextPlayerTheme
-import dev.anilbeesetti.nextplayer.feature.player.ui.controls.ControlsTopView
-import dev.anilbeesetti.nextplayer.feature.videopicker.composables.VideoGridItem
-import dev.anilbeesetti.nextplayer.feature.videopicker.composables.VideoListItem
+import dev.himanshu.myplayer.core.model.ApplicationPreferences
+import dev.himanshu.myplayer.core.model.Video
+import dev.himanshu.myplayer.core.ui.theme.MyPlayerTheme
+import dev.himanshu.myplayer.feature.player.ui.controls.ControlsTopView
+import dev.himanshu.myplayer.feature.videopicker.composables.VideoGridItem
+import dev.himanshu.myplayer.feature.videopicker.composables.VideoListItem
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Rule
@@ -66,7 +66,7 @@ class MediaTitleLineBreakTest {
     }
 
     private fun assertTitleWraps(content: @Composable () -> Unit) {
-        composeRule.setContent { NextPlayerTheme { content() } }
+        composeRule.setContent { MyPlayerTheme { content() } }
         val results = mutableListOf<TextLayoutResult>()
         composeRule.onNodeWithText(
             text = title,

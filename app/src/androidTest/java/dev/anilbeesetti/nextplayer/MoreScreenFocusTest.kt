@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer
+package dev.himanshu.myplayer
 
 import androidx.activity.ComponentActivity
 import androidx.compose.runtime.mutableStateOf
@@ -14,12 +14,12 @@ import androidx.compose.ui.test.performKeyInput
 import androidx.compose.ui.test.pressKey
 import androidx.compose.ui.test.requestFocus
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import dev.anilbeesetti.nextplayer.core.common.extensions.isTelevision
-import dev.anilbeesetti.nextplayer.core.model.Video
-import dev.anilbeesetti.nextplayer.core.ui.base.DataState
-import dev.anilbeesetti.nextplayer.core.ui.theme.NextPlayerTheme
-import dev.anilbeesetti.nextplayer.feature.more.screens.more.MoreScreenContent
-import dev.anilbeesetti.nextplayer.feature.more.screens.more.MoreUiState
+import dev.himanshu.myplayer.core.common.extensions.isTelevision
+import dev.himanshu.myplayer.core.model.Video
+import dev.himanshu.myplayer.core.ui.base.DataState
+import dev.himanshu.myplayer.core.ui.theme.MyPlayerTheme
+import dev.himanshu.myplayer.feature.more.screens.more.MoreScreenContent
+import dev.himanshu.myplayer.feature.more.screens.more.MoreUiState
 import org.junit.Assume.assumeTrue
 import org.junit.Before
 import org.junit.Rule
@@ -122,7 +122,7 @@ class MoreScreenFocusTest {
     private fun showMore(history: List<Video> = clips) {
         state.value = MoreUiState(history = DataState.Success(value = history))
         composeRule.setContent {
-            NextPlayerTheme {
+            MyPlayerTheme {
                 MoreScreenContent(
                     state = state.value,
                     onAction = {},
