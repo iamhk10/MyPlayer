@@ -1,4 +1,4 @@
-package dev.anilbeesetti.nextplayer.feature.more.screens.history
+package dev.himanshu.myplayer.feature.more.screens.history
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -31,17 +31,17 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import dev.anilbeesetti.nextplayer.core.ui.R
-import dev.anilbeesetti.nextplayer.core.ui.base.DataState
-import dev.anilbeesetti.nextplayer.core.ui.components.NextDialog
-import dev.anilbeesetti.nextplayer.core.ui.components.NextTopAppBar
-import dev.anilbeesetti.nextplayer.core.ui.components.WatchHistoryConfirmationDialog
-import dev.anilbeesetti.nextplayer.core.ui.components.tvFocusRing
-import dev.anilbeesetti.nextplayer.core.ui.designsystem.NextIcons
-import dev.anilbeesetti.nextplayer.core.ui.extensions.copy
-import dev.anilbeesetti.nextplayer.feature.more.components.HistoryEmptyState
-import dev.anilbeesetti.nextplayer.feature.videopicker.composables.CenterCircularProgressBar
-import dev.anilbeesetti.nextplayer.feature.videopicker.composables.VideoListItem
+import dev.himanshu.myplayer.core.ui.R
+import dev.himanshu.myplayer.core.ui.base.DataState
+import dev.himanshu.myplayer.core.ui.components.NextDialog
+import dev.himanshu.myplayer.core.ui.components.NextTopAppBar
+import dev.himanshu.myplayer.core.ui.components.WatchHistoryConfirmationDialog
+import dev.himanshu.myplayer.core.ui.components.tvFocusRing
+import dev.himanshu.myplayer.core.ui.designsystem.NextIcons
+import dev.himanshu.myplayer.core.ui.extensions.copy
+import dev.himanshu.myplayer.feature.more.components.HistoryEmptyState
+import dev.himanshu.myplayer.feature.videopicker.composables.CenterCircularProgressBar
+import dev.himanshu.myplayer.feature.videopicker.composables.VideoListItem
 
 @Composable
 fun HistoryScreen(viewModel: HistoryViewModel) {
